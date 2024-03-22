@@ -1,1 +1,2 @@
 FLASK_APP=sorteio.py
+FLASK_DEBUG=1

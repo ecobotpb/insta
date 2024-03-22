@@ -1,9 +1,26 @@
     {% extends 'base.html' %}
 
     {% block conteudo %}
-    <h2>Hello, {{ nome }}</h2>
-    <p>
-        Profissão: {{dados.Profissão}}<br>
-        Empresa: {{dados.Empresa}}
-    </p>
+    <div class="container">
+        <div class="content">
+            <!-- <h2>Hello, {{ nome }}</h2>  -->
+            <h2>Cole o link da sua publicação para sortear</h2>
+            <p>
+                <img class="img_quadrada" src="{{url_for('static', filename='imagens/banner.png')}}">
+            </p>
+            <!--
+                <p>
+                Profissão: {{dados.Profissão}}<br>
+                Empresa: {{dados.Empresa}}
+            </p>
+        -->
+            <p> Cole o link Aqui</p>
+            <form action="/processar_link" method="POST">
+                <input type="url" name="link" id="link" placeholder="https://www.instagram.com/p/C4sfdsNuq0-/" required><br>
+                <button type="submit">Buscar Postagem</button>
+            </form>
+            
+            
+        </div>
+    </div>
     {% endblock %}

@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block conteudo %}
+
+    {% set mensagens = get_falshed_messages() %}
+    {% if mensagens%}
+
+    <div class="container">
+        <div class="content">
+            <form action="/autenticar" method="post">
+                Usuario: <input type="text" name="usuario"><br>
+                Senha: <input type="text" name="senha"><br>
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+    </div>
+
+{% endblock %}

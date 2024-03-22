@@ -1,0 +1,67 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* Estilo do nav */
+nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+/* Estilo do conteúdo centralizado */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 100px); /* Altura da janela menos a altura do nav */
+}
+
+/* Estilo do bloco de conteúdo */
+.content {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para o título h2 */
+h2 {
+    margin-bottom: 20px;
+}
+
+/* Estilo para as imagens */
+.img_quadrada {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Estilo para o rodapé */
+h6 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    margin-bottom: 0px  ;
+    color: #ffffff;
+    background-color:#333
+}
+
